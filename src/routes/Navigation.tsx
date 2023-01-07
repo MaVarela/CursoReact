@@ -22,7 +22,7 @@ export const Navigation = () => {
             {routes.map(({ path, Component }) => (
               <Route key={path} path={path} element={<Component />} />
             ))}
-            <Route path="/*" element={<Navigate to={routes[0].path} replace />} />
+            <Route path="/*" element={<Navigate to={routes[1].path} replace />} />
           </Routes>
         </div>
       </BrowserRouter>
